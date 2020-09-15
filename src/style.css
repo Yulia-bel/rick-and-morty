@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(247, 208, 181);
+    height: 100vh;
+}
+
+/* Styling the header - logo and the title*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+p {
+    margin-bottom: 1vh;
+}
+
+.title {
+    width:70%;
+    text-align: left;
+    font-size: 5vw;
+    color: rgb(129, 64, 118);
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+}
+
+.logo {
+    width: 20%;
+    padding: 1vh 1vw;
+}
+
+#logo {
+    width: 100%;
+    height: 100%;
+}
+
+/*Styling main container which inclides sidebar menu and episode container*/
+
+.main__container {
+    display: flex;
+    height: 75vh;
+}
+
+.menu__container {
+    width: 20%;
+    padding: 0 2vw;
+}
+
+
+/*Button to show list of all episodes*/
+.episodes__button {
+    width: 60%;
+    height: 7vh;
+    margin: 3vh 2vw;
+    background-color: transparent;
+    border: 1px solid rgb(129, 64, 118);
+    color: rgb(129, 64, 118);
+    font-family: 'Architects Daughter', cursive;
+    font-size: 2vw;
+    cursor: pointer;
+}
+
+.episodes__button:hover, .load:hover {
+    background-color: rgb(129, 64, 118);
+    border: 1px solid rgb(129, 64, 118);
+    color: white;
+}
+
+/*Container for list of all episodes which is opened and closed by Episodes button*/
+
+#episodes__list {
+    height: 60vh;
+    display: none;
+    padding: 1vh 1vw;
+    overflow-y: scroll;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*Episode Links*/
+
+.episode__link {
+    margin-top: 1vh;
+    color: rgb(129, 64, 118);
+    font-family: 'Neucha', cursive;
+    font-size: 1vw;
+    cursor: pointer;  
+}
+
+.episode__link:hover {
+    font-weight: bold;  
+}
+
+/*Button to load more episodes in the menu list*/
+
+.load {
+    margin: 2vh 2vw;
+    height: 5vh;
+    width: 10vw;
+    background-color: transparent;
+    border: 1px solid rgb(129, 64, 118);
+    color: rgb(129, 64, 118);
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+/*Episode container showing episode info and characters*/
+
+.episode__container {
+    width: 70%;
+    height: 75vh;
+    margin: 1vh 0 0 0;
+    overflow-y: scroll;
+
+}
+
+/*Name of episode in episodes container*/
+.episode__info {
+    text-align: center;
+    font-family: 'Neucha', cursive;
+    font-size: 2vw;
+    color: teal;
+    margin-bottom: 3vh;
+}
+
+/*Part of episode conntainer whoch has all the character cards*/
+
+.episode__characters {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*Card with information about charcters*/
+
+.character__card {
+    width: 25%;
+    padding: 2vh 1vw;
+    border: none;
+    border-radius: 10px;
+    font-size: 1vw;
+    font-family: 'Neucha', cursive;
+    text-align: center;
+    margin-bottom: 2vh;
+    background-color: rgba(255, 255, 255, 0.3);
+
+    box-shadow: 0px 10px 13px -7px rgb(129, 64, 118), 5px 5px 15px 5px rgba(0,0,0,0);
+
+}
+
+/*Image of the small character cards shown in the episode container*/
+.character__image {
+    width: 90%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.character__image:hover {
+    opacity: 0.5;
+}
+
+/*Large image for individual character card*/
+.character__image__ind {
+    width: 50%;
+    margin: 2vh auto;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgb(129, 64, 118);
+}
+
+/*Other parts of individual card of a character*/
+
+.character__name {
+    font-size: 1.5vw;
+    font-family: 'Neucha', cursive;
+    color: rgb(129, 64, 118);
+    margin: 1vh 0;
+}
+
+.character__ind{
+    width: 40vw;
+    height: auto;
+    font-size: 1.5vw;
+    font-family: 'Neucha', cursive;
+    text-align: center;
+    margin-bottom: 2vh;
+}
+
+.ind {
+    font-size: 3vw;
+    color: teal;
+}
+
+/*List of episodes which appears in individual character card*/
+.episodes__char {
+    font-size: 1vw;
+    margin: 0.5vh 0;
+    cursor: pointer;
+}
+.episodes__char:hover {
+    font-weight: bold;
+}
+
+/*Link to show location in individual character card*/
+.show__location {
+    color: rgb(230, 117, 42);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Styling scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+
+  ::-webkit-scrollbar-track {
+    background: rgba(230, 117, 42, 0.3); 
+  }
+   
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(129, 64, 118); 
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(129, 64, 118); 
+  }
